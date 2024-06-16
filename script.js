@@ -127,7 +127,7 @@ const welcomeScreen = document.getElementById('welcome-screen');
 const questionContainer = document.getElementById('question-container');
 const timerElement = document.getElementById('time');
 const nextButton = document.getElementById('next-btn');
-
+const quizStartBtn = document.getElementById('quizStartBtn');
 let currentQuestionIndex = 0;
 let score = 0;
 let timer;
@@ -159,18 +159,50 @@ function loadQuestion() {
     const questionData = selectedQuestions[currentQuestionIndex];
     questionContainer.innerHTML = `
         <p>${currentQuestionIndex + 1}. ${questionData.question}</p>
-        <label class="answer">
-            <input type="radio" name="answer" value="a"> ${questionData.a}
-        </label>
-        <label class="answer">
-            <input type="radio" name="answer" value="b"> ${questionData.b}
-        </label>
-        <label class="answer">
-            <input type="radio" name="answer" value="c"> ${questionData.c}
-        </label>
-        <label class="answer">
-            <input type="radio" name="answer" value="d"> ${questionData.d}
-        </label>
+        <div class="option-sheet">
+        <table>
+            <tr>
+                <td>
+                <label class="answer">
+                  <input type="radio" name="answer" value="a">
+                </label>
+                 </td>
+                <td>
+                     ${questionData.a}
+                </td>
+            </tr>
+             <tr>
+                <td>
+                <label class="answer">
+                  <input type="radio" name="answer" value="b"> 
+                </label>
+                 </td>
+                <td>
+                     ${questionData.b}
+                </td>
+            </tr>
+             <tr>
+                <td>
+                <label class="answer">
+                  <input type="radio" name="answer" value="c">
+                </label>
+                 </td>
+                <td>
+                     ${questionData.c}
+                </td>
+            </tr>
+             <tr>
+                <td>
+                <label class="answer">
+                  <input type="radio" name="answer" value="d">
+                </label>
+                 </td>
+                <td>
+                     ${questionData.d}
+                </td>
+            </tr>
+        </table>
+       
     `;
     nextButton.disabled = true; // Disable button initially
     document.querySelectorAll('input[name="answer"]').forEach(input => {
