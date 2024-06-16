@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Welcome Screen -->
+    <div id="welcome-screen" class="screen active">
+        <div class="welcome-container">
+            <h1>Welcome to Rohan's Quiz </h1>
+            <form id="user-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <button type="submit">Start Quiz</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Quiz Screen -->
+    <div id="quiz-screen" class="screen hidden">
+        <div class="quiz-container">
+            <h1>Quiz Time</h1>
+            <div id="question-container"></div>
+            <div id="timer">Time left: <span id="time">30</span> seconds</div>
+            <button id="next-btn" >Next Question</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

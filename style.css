@@ -1,0 +1,158 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+/* Screen Containers */
+.screen {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.active {
+    display: flex;
+}
+
+/* Welcome Screen Styles */
+#welcome-screen {
+    background-color: #d9edf7; /* Light blue background */
+    color: #31708f;
+}
+
+.welcome-container {
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-container h1 {
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 200px;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Quiz Screen Styles */
+#quiz-screen {
+    background-color: #fff;
+    color: #333;
+}
+
+.quiz-container {
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#question-container {
+    margin-top: 20px;
+}
+
+#timer {
+    margin: 20px 0;
+    font-size: 18px;
+}
+#next-btn {
+    
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+   
+}
+
+
+#next-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Result Screen Styles */
+#result-screen {
+    background-color: #d9edf7; /* Light blue background to match the welcome screen */
+    color: #31708f;
+}
+
+.result-container {
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.result-container h1 {
+    margin-bottom: 20px;
+}
+
+#user-info {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#score-info {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+#restart-btn {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#restart-btn:hover {
+    background-color: #218838;
+}
+
+
